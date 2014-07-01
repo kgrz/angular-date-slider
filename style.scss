@@ -1,0 +1,50 @@
+/* Put your css in here */
+
+h1 {
+  color: red;
+}
+
+#dates-container-div {
+  position: absolute;
+  width: 90%;
+  overflow: hidden;
+  
+  .left-mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 33%;
+    height: 100%;
+    background: #fff;
+    z-index: 100;
+    border-right: 3px #aaa dotted;
+  }
+  
+  .right-mask {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 33%;
+    height: 100%;
+    background: #fff;
+    z-index: 100;
+    border-left: 3px #aaa dotted;
+  }
+  
+  ul {
+    display: inline-table;
+  }
+  
+  li {
+    padding: 1.25em 0.75em;
+    list-style: none;
+    display: inline;
+    background: #e6e6a6;
+    border: 1px #fafafa solid;
+    cursor: pointer;
+    
+    &:hover {
+      background: #a35a34;
+    }
+  }
+}
